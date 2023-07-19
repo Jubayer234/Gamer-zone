@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 *{
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
 *{
+     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +16,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px  240px;
+    padding: 10px 240px ;
+    margin-top: 40px;
     background-color: #fff;
 
 }
@@ -26,7 +27,7 @@ nav div{
 }
 nav .logo-img{
     height: 40px;
-    margin-top: 45px;
+    margin-top: 10px;
   
 }
 .gamer{
@@ -65,8 +66,10 @@ nav li a{
     background-repeat: no-repeat;
     padding: 10px 240px;
 }
+
 .play-like{
     color: #0B0223;
+    margin-top: 150px;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
@@ -81,6 +84,7 @@ nav li a{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 20px;
 }
 .btn-1{
     color: white;
@@ -88,6 +92,7 @@ nav li a{
     font-style: 600;
     border: 0;
     padding: 21px 40px;
+    margin-top: 40px;
     border-radius: 48px;
     background: #FF42A5;
 
@@ -103,3 +108,43 @@ nav li a{
     margin-left: 20px;
 }
 /* banner section ends */
+
+
+
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+    header{
+        padding: 30px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav>ul{
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .banner{
+        flex-direction: column;
+        height: 600px;
+        padding: 0px;
+        gap: 40px;
+        
+    }
+    .play-like{
+        margin-top: 90px;
+    }
+    .banner-title{
+        margin-bottom: 50px;
+    }
+    .banner-p{
+
+        margin-bottom: 20px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    
+}

@@ -17,7 +17,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px 240px ;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #fff;
 
 }
@@ -147,7 +147,10 @@ nav li a{
     margin-top: 120px;
 }
 .play-game-description{
-    margin-top: 250px;
+    margin-top: 230px;
+}
+.img-1{
+    width: 100% ;
 }
 .img-2{
     position: relative;
@@ -202,6 +205,7 @@ nav li a{
     .banner-img img{
         width: 100%;
     }
+    /* online game part */
     .online-game-container{
         margin-top: 400px;
         font-size: 20px;
@@ -215,5 +219,31 @@ nav li a{
     .game-images{
         flex-direction: column;
     }
-    
+/* play game section */
+    .play-game-container{
+        flex-direction: column-reverse;
+        padding: 0px;
+        margin: 20px;
+        gap: 30px;
+    }
+    .play-game-img img{
+        width: 100%;
+    }
+    .img-1{
+        width: 80%;
+        margin-left: 10px;
+
+    }
+    .img-2{
+        width: 40%;
+        position:relative;
+        bottom: 100px;
+        left: 230px;
+        
+    }
+    .play-game-description{
+        text-align: center;
+        padding: 0px 40px;
+        margin: 0;
+    }
 }

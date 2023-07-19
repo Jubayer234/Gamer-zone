@@ -274,6 +274,12 @@ nav li a{
     font-size: 12px;
     font-weight: 500;
   }
+  .footer-p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
 
 
 
@@ -331,7 +337,7 @@ nav li a{
     .game-description{
         font-size: 12px;
     }
-    .game-images{
+    .game-img-container{
         flex-direction: column;
     }
 /* play game section */
@@ -361,5 +367,56 @@ nav li a{
         text-align: center;
         padding: 0px 40px;
         margin: 0;
+    }
+    /* icon section */
+    .icon-section{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    .icon-container-1{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+    .icon-container-2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0%;
+        padding: 0%;
+        gap: 10px;
+    }
+    .icon-img{
+        width: 100%;
+        font-size: 10px;
+        margin: 0%;
+    }
+    .icon-img img{
+        width: 50px;
+    }
+    /* footer section */
+    .footer-container{
+        padding: 0%;
+    }
+    .titles{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .footer-logo-container{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        font-size: 50px;
+        gap: 20px;
+    }
+    .conditions{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
     }
 }

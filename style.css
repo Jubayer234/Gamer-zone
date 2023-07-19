@@ -137,7 +137,10 @@ nav li a{
     align-items: center;
     margin-top: 50px;
     gap: 40px;
+  
 }
+  
+
 /* play game container */
 .play-game-container{
     display: flex;
@@ -157,8 +160,118 @@ nav li a{
     bottom: 250px;
     left: 528px;
 }
+/* icon section */
+.icon-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    height: 430px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+    
+}
+.icon-btn{
+    align-items: center;
+    width: 240px;
+height: 80px;
+border: none;
+border-radius: 50px;
+background: #FFF;
+margin-left: 30px;
+ 
+}
+.icon-btn:hover {
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+  }
 
 
+
+
+
+
+/* test-section */
+.icons-sec {
+    margin-top: 6rem;
+  }
+  
+  .icons-container {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
+  
+  .icons-and-text {
+    flex-basis: 17%;
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+    border-radius: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  
+  .icons-and-text img {
+    width: 1.5rem;
+  }
+  
+  .icons-and-text:hover {
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+  }
+
+
+  /* footer-test */
+  .footer-section {
+    background: #0B0223;
+    color: white;
+    margin-top: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+   
+  }
+  
+  .footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+  .footer-title{
+    display: flex;
+    font-size: 45px;
+    gap: 10px;
+  }
+  .footer-logo-img{
+    height: 100%;
+    margin-top: 10px;
+  }
+  
+  .titles {
+    display:flex;
+    gap: 30px;
+  }
+  
+  .footer-logo-container img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+  }
+  
+  .conditions{
+    display:flex;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
 
 
 
@@ -207,7 +320,7 @@ nav li a{
     }
     /* online game part */
     .online-game-container{
-        margin-top: 400px;
+        margin-top: 500px;
         font-size: 20px;
     }
     .online-game{
@@ -223,8 +336,9 @@ nav li a{
     .play-game-container{
         flex-direction: column-reverse;
         padding: 0px;
-        margin: 20px;
-        gap: 30px;
+        margin:20px;
+        margin-top: 100px;
+        gap: 50px;
     }
     .play-game-img img{
         width: 100%;

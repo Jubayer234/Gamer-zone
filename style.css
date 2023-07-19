@@ -138,6 +138,22 @@ nav li a{
     margin-top: 50px;
     gap: 40px;
 }
+/* play game container */
+.play-game-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 240px;
+    gap: 240px;
+    margin-top: 120px;
+}
+.play-game-description{
+    margin-top: 250px;
+}
+.img-2{
+    position: relative;
+    bottom: 250px;
+    left: 528px;
+}
 
 
 

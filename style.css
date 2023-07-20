@@ -27,7 +27,7 @@ nav div{
 }
 nav .logo-img{
     height: 40px;
-    margin-top: 10px;
+    margin-top: 8px;
   
 }
 .gamer{
@@ -37,11 +37,11 @@ nav .nav-title{
     color: #0B0223;
     font-size: 45px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
-nav>ul {
+.nav>ul{
     display: flex;
     align-items: center;
-
 }
 nav li{
     list-style: none;
@@ -49,14 +49,18 @@ nav li{
     font-weight: 500;
     font-size: 18px;
 }
-nav li a{
+nav li a,
+.follow{
     text-decoration: none;
     color: #3C354F;
 }
-.follow{
+.nav-icon{
+    display: flex;
+    align-items: center;
     padding: 20px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
+    text-align: center;
 }
 /* banner section */
 .banner{
@@ -190,42 +194,34 @@ nav li a{
 .icon-section{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     height: 430px;
-    display: grid;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     
 }
 .icon-container-1{
     display: flex;
-    justify-content:center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
     align-items: center;
-    gap:60px;
-    margin-top: 120px;
+
     
 }
 .icon-img{
     display: flex;
-    justify-content: space-around;
+    flex-basis: 17%;
     align-items: center;
-    color: #0B0223;
-    font-size: 18px;
-    font-weight: 600;
     border-radius: 50px;
     background: #FFF;
-    width: 250px;
     height: 80px;
-    padding: 10px;
+    gap: 10px;
+    padding-left: 10px;
 }
 .icon-img:hover {
     border: 2px solid #FF42A5;
     color: #FF42A5;
-  }
-  .icon-container-2{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 60px;
   }
   /* footer-section */
   .footer-section {
@@ -296,15 +292,24 @@ nav li a{
     header{
         padding: 30px;
     }
-    nav {
+    nav{
         flex-direction: column;
         padding: 0;
     }
-    nav>ul{
+    nav div{
         flex-direction: column;
-        gap: 35px;
-        margin-bottom: 30px;
-        margin-top: 20px;
+    }
+    nav .logo-img{
+        height: 100%;
+    }
+    .nav>ul{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .nav-icon{
+        flex-direction: row;
+        margin-bottom: 50px;
     }
     .banner{
         flex-direction: column;
@@ -372,20 +377,12 @@ nav li a{
     .icon-section{
         margin: 0;
         padding: 0;
-        gap: 0;
     }
     .icon-container-1{
         display: grid;
        grid-template-columns: repeat(3,1fr);
         padding: 0;
         margin: 0;
-        gap: 10px;
-    }
-    .icon-container-2{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        margin: 0%;
-        padding: 0%;
         gap: 10px;
     }
     .icon-img{
@@ -397,39 +394,55 @@ nav li a{
         width: 50px;
     }
     /* footer section */
-    .footer-container{
-        padding: 0%;
+    .footer-section{
+        margin-top: 0px;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
     .titles{
         display: grid;
         grid-template-columns: repeat(3 ,1fr);
-        font-size: 15px;
-        margin-left: 30px;
+        font-size: 13px;
     }
     .footer-logo-container{
         display: grid;
         grid-template-columns: repeat(3 ,1fr);
-        font-size: 50px;
-        gap: 20px;
+        gap: 40px;
     }
     .conditions{
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
-        justify-content: center;
-        align-items: center;
-        margin-left: 20px;
+        margin-left: 30px;
+    }
+    .footer-p{
+        font-size: 9px;
+        margin-left: px;
+
     }
 }
 
 /*  tablet version responsiv*/
 @media screen and  (min-width:576px) and (max-width:992px) {
     nav{
-        width:1700px;
+        width:1500px;
+        padding: 10px 150px;
     }
     .online-game-container{
         width: 1500px;
+        margin-top: 80px;
+    }
+    .play-game-container{
+        padding: 10px 100px;
+        margin-bottom: -80px;
     }
     .icon-section{
+        width: 1500px;
+    }
+    .banner{
+        column-gap: 120px;
+        padding: 10px 180px;
+    }
+    .footer-section{
         width: 1500px;
     }
 }

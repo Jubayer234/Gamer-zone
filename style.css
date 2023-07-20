@@ -124,7 +124,6 @@ nav li a,
 }
 .game-description{
     color: #534C64;
-    font-size: 18px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -134,6 +133,12 @@ nav li a,
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.game-name{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .game-img-container{
@@ -347,7 +352,7 @@ nav li a,
         font-size: 20px;
     }
     .online-game{
-        font-size: 30px;  
+        font-size: 25px;  
     }
     .game-description{
         font-size: 12px;
